@@ -18,7 +18,7 @@
 
 <!-- DESCRIPTION/ -->
 
-A package that contains an array of every single file extension for text files that there is
+A package that contains an array of every single file extension there is for text files
 
 <!-- /DESCRIPTION -->
 
@@ -47,7 +47,7 @@ console.log(require('textextensions'))
 
 ## Contribute
 
-Missing an extension? Send a pull request!
+Missing an extension? [Send a pull request!](https://github.com/bevry/textextensions/edit/master/index.js)
 
 Want a definitive list of binary extensions? Check out [bevry/binaryextensions](https://github.com/bevry/binaryextensions)
 
@@ -80,8 +80,11 @@ No sponsors yet! Will you be the first?
 
 ### Contributors
 
-No contributors yet! Will you be the first?
-[Discover how you can contribute by heading on over to the `Contributing.md` file.](https://github.com/bevry/textextensions/blob/master/Contributing.md#files)
+These amazing people have contributed code to this project:
+
+- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/bevry/textextensions/commits?author=balupton)
+
+[Become a contributor!](https://github.com/bevry/textextensions/blob/master/Contributing.md#files)
 
 <!-- /BACKERS -->
 
