@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": {
@@ -10,21 +10,26 @@
   "badges": {
     "travis": false,
     "npm": true,
+    "npmdownloads": true,
+    "david": true,
+    "daviddev": true,
     "gittip": "bevry",
     "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6"
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
   },
   "keywords": [
-    "a",
-    "b",
-    "c"
+    "text",
+    "extensions"
   ],
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "JamyDev (https://github.com/JamyDev)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
@@ -36,7 +41,7 @@
   "engines": {},
   "dependencies": {},
   "devDependencies": {
-    "projectz": "~0.2.3"
+    "projectz": "~0.3.17"
   },
   "directories": {
     "lib": "."

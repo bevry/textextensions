@@ -8,10 +8,15 @@
 
 <!-- BADGES/ -->
 
-[![NPM version](http://badge.fury.io/js/textextensions.png)](https://npmjs.org/package/textextensions "View this project on NPM")
-[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![NPM version](https://img.shields.io/npm/v/textextensions.svg)](https://npmjs.org/package/textextensions "View this project on NPM")
+[![NPM downloads](https://img.shields.io/npm/dm/textextensions.svg)](https://npmjs.org/package/textextensions "View this project on NPM")
+[![Dependency Status](https://img.shields.io/david/bevry/textextensions.svg)](https://david-dm.org/bevry/textextensions)
+[![Dev Dependency Status](https://img.shields.io/david/dev/bevry/textextensions.svg)](https://david-dm.org/bevry/textextensions#info=devDependencies)<br/>
+[![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
+[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 <!-- /BADGES -->
 
@@ -27,13 +32,9 @@ A package that contains an array of every single file extension there is for tex
 
 ## Install
 
-### [Node](http://nodejs.org/), [Browserify](http://browserify.org/)
+### [NPM](http://npmjs.org/)
 - Use: `require('textextensions')`
 - Install: `npm install --save textextensions`
-
-### [Ender](http://ender.jit.su/)
-- Use: `require('textextensions')`
-- Install: `ender add textextensions`
 
 <!-- /INSTALL -->
 
@@ -55,7 +56,7 @@ Want a definitive list of binary extensions? Check out [bevry/binaryextensions](
 <!-- HISTORY/ -->
 
 ## History
-[Discover the change history by heading on over to the `History.md` file.](https://github.com/bevry/textextensions/blob/master/History.md#files)
+[Discover the change history by heading on over to the `HISTORY.md` file.](https://github.com/bevry/textextensions/blob/master/HISTORY.md#files)
 
 <!-- /HISTORY -->
 
@@ -74,17 +75,20 @@ These amazing people are maintaining this project:
 
 No sponsors yet! Will you be the first?
 
-[![Gittip donate button](http://img.shields.io/gittip/bevry.png)](https://www.gittip.com/bevry/ "Donate weekly to this project using Gittip")
-[![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
-[![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![Gratipay donate button](https://img.shields.io/gratipay/bevry.svg)](https://www.gratipay.com/bevry/ "Donate weekly to this project using Gratipay")
+[![Flattr donate button](https://img.shields.io/badge/flattr-donate-yellow.svg)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
+[![PayPayl donate button](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
+[![BitCoin donate button](https://img.shields.io/badge/bitcoin-donate-yellow.svg)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 ### Contributors
 
 These amazing people have contributed code to this project:
 
-- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton) - [view contributions](https://github.com/bevry/textextensions/commits?author=balupton)
+- [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/bevry/textextensions/commits?author=balupton)
+- [JamyDev](https://github.com/JamyDev) — [view contributions](https://github.com/bevry/textextensions/commits?author=JamyDev)
 
-[Become a contributor!](https://github.com/bevry/textextensions/blob/master/Contributing.md#files)
+[Become a contributor!](https://github.com/bevry/textextensions/blob/master/CONTRIBUTING.md#files)
 
 <!-- /BACKERS -->
 
