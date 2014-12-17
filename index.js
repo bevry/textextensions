@@ -27,5 +27,6 @@ module.exports = [
 	'text',
 	'txt',
 	'xml',
-	'yaml'
+	'yaml',
+	'yml'
 ];
