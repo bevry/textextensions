@@ -51,6 +51,7 @@
   },
   "engines": {},
   "main": "index.js",
+  "browser": "index.js",
   "dependencies": {},
   "devDependencies": {
     "projectz": "^1.0.0"
