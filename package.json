@@ -4,32 +4,43 @@
   "version": "1.0.1",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
-  "license": {
-    "type": "MIT"
-  },
-  "badges": {
-    "travis": false,
-    "npm": true,
-    "npmdownloads": true,
-    "david": true,
-    "daviddev": true,
-    "gittip": "bevry",
-    "flattr": "344188/balupton-on-Flattr",
-    "paypal": "QB8GQPZAH84N6",
-    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
-    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
-  },
+  "license": "MIT",
   "keywords": [
     "text",
     "extensions"
   ],
+  "badges": {
+    "list": [
+      "npmversion",
+      "npmdownloads",
+      "daviddm",
+      "daviddmdev",
+      "---",
+      "slackin",
+      "patreon",
+      "gratipay",
+      "flattr",
+      "paypal",
+      "bitcoin",
+      "wishlist"
+    ],
+    "config": {
+      "patreonUsername": "bevry",
+      "gratipayUsername": "bevry",
+      "flattrUsername": "balupton",
+      "paypalURL": "https://bevry.me/paypal",
+      "bitcoinURL": "https://bevry.me/bitcoin",
+      "wishlistURL": "https://bevry.me/wishlist",
+      "slackinURL": "https://slack.bevry.me"
+    }
+  },
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
-    "JamyDev (https://github.com/JamyDev)"
+    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)",
+    "Jamy Timmermans <me@jamy.be> (https://github.com/JamyDev)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
@@ -39,13 +50,19 @@
     "url": "http://github.com/bevry/textextensions.git"
   },
   "engines": {},
+  "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "projectz": "~0.3.17"
+    "projectz": "^1.0.0"
   },
-  "directories": {
-    "lib": "."
-  },
-  "scripts": {},
-  "main": "./index.js"
+  "scripts": {
+    "meta": "npm run meta:projectz",
+    "meta:docs": "documentation build -f html -g --shallow ./source/**.js -o ./docs",
+    "meta:projectz": "projectz compile",
+    "prepare": "npm run meta",
+    "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",
+    "release:publish": "npm publish",
+    "release:tag": "git tag v$npm_package_version -a",
+    "release:push": "git push origin master && git push origin --tags"
+  }
 }
