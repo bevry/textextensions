@@ -1,5 +1,8 @@
 # History
 
+## v2.0.1 2016 May 10
+- JSON should have two space indentation
+
 ## v2.0.0 2016 May 10
 - Now a json file
 

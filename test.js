@@ -5,7 +5,7 @@ var fs = require('fs')
 var assert = require('assert-helpers')
 var sourcePath = require('path').join(__dirname, 'index.json')
 var suite = require('joe').suite
-var indentation = '\t'
+var indentation = '  '
 
 suite('extensions', function (suite, test) {
 	var sourceContent, sourceData;
