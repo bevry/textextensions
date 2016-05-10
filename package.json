@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
@@ -52,8 +52,8 @@
     "url": "http://github.com/bevry/textextensions.git"
   },
   "engines": {},
-  "main": "index.js",
-  "browser": "index.js",
+  "main": "index.json",
+  "browser": "index.json",
   "dependencies": {},
   "devDependencies": {
     "assert-helpers": "^4.2.0",
