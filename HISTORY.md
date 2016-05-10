@@ -1,5 +1,9 @@
 # History
 
+## v1.1.0 2016 May 10
+- Added about 150 additional text extensions
+	- Thanks to [FelipeBB](https://github.com/FelipeBB) for [pull request #3](https://github.com/bevry/textextensions/pull/3)
+
 ## v1.0.2 2016 May 2
 - Updated meta files
 
