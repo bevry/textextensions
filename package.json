@@ -64,7 +64,6 @@
   "scripts": {
     "setup": "npm install",
     "meta": "npm run meta:projectz",
-    "meta:docs": "documentation build -f html -g --shallow ./source/**.js -o ./docs",
     "meta:projectz": "projectz compile",
     "prepare": "npm run test && npm run meta",
     "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",
