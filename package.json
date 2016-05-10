@@ -55,6 +55,9 @@
   "browser": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "assert-helpers": "^4.2.0",
+    "joe": "^1.6.0",
+    "joe-reporter-console": "^1.2.1",
     "projectz": "^1.0.0"
   },
   "scripts": {
