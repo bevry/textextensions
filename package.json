@@ -11,6 +11,7 @@
   ],
   "badges": {
     "list": [
+      "travisci",
       "npmversion",
       "npmdownloads",
       "daviddm",
@@ -57,13 +58,15 @@
     "projectz": "^1.0.0"
   },
   "scripts": {
+    "setup": "npm install",
     "meta": "npm run meta:projectz",
     "meta:docs": "documentation build -f html -g --shallow ./source/**.js -o ./docs",
     "meta:projectz": "projectz compile",
-    "prepare": "npm run meta",
+    "prepare": "npm run test && npm run meta",
     "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",
     "release:publish": "npm publish",
     "release:tag": "git tag v$npm_package_version -a",
-    "release:push": "git push origin master && git push origin --tags"
+    "release:push": "git push origin master && git push origin --tags",
+    "test": "node --harmony ./test.js"
   }
 }
