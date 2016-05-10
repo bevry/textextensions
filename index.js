@@ -1,4 +1,6 @@
 module.exports = [
+	'Makefile',
+	'Rakefile',
 	'ada',
 	'adb',
 	'ads',
@@ -121,9 +123,8 @@ module.exports = [
 	'properties',
 	'pt',
 	'py',
+	'r',
 	'rake',
-	'R',
-	'Rakefile',
 	'rb',
 	'resx',
 	'rhtml',
@@ -170,4 +171,4 @@ module.exports = [
 	'yaml',
 	'yml',
 	'zsh'
-];
+]
