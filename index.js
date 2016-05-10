@@ -1,4 +1,4 @@
-moduleexports = [
+module.exports = [
     'as',
     'mxml',
     'ada',
