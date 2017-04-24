@@ -1,6 +1,9 @@
+/* eslint-env node */
 // should be consistent between
 // https://github.com/bevry/textextensions/blob/master/test.js
 // https://github.com/bevry/binaryextensions/blob/master/test.js
+'use strict'
+
 var fs = require('fs')
 var assert = require('assert-helpers')
 var sourcePath = require('path').join(__dirname, 'index.json')
@@ -8,7 +11,7 @@ var suite = require('joe').suite
 var indentation = '  '
 
 suite('extensions', function (suite, test) {
-	var sourceContent, sourceData;
+	var sourceContent, sourceData
 
 	test('read the file', function (next) {
 		fs.readFile(sourcePath, function (error, data) {

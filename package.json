@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
@@ -17,16 +17,19 @@
       "daviddm",
       "daviddmdev",
       "---",
-      "slackin",
       "patreon",
+      "opencollective",
       "gratipay",
       "flattr",
       "paypal",
       "bitcoin",
-      "wishlist"
+      "wishlist",
+      "---",
+      "slackin"
     ],
     "config": {
       "patreonUsername": "bevry",
+      "opencollectiveUsername": "bevry",
       "gratipayUsername": "bevry",
       "flattrUsername": "balupton",
       "paypalURL": "https://bevry.me/paypal",
@@ -37,39 +40,58 @@
   },
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)"
+    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (https://balupton.com)",
-    "Jamy Timmermans <me@jamy.be> (https://github.com/JamyDev)",
-    "FelipeBB (https://github.com/FelipeBB)"
+    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+    "Jamy Timmermans <jamy@beam.pro> (https://github.com/JamyDev)",
+    "Felipe Beline <fe.belineb@gmail.com> (https://github.com/FelipeBB)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/bevry/textextensions.git"
+    "url": "https://github.com/bevry/textextensions.git"
   },
-  "engines": {},
+  "engines": {
+    "node": ">=0.8"
+  },
+  "editions": [
+    {
+      "description": "JSON",
+      "directory": ".",
+      "entry": "index.json",
+      "syntaxes": [
+        "json"
+      ]
+    }
+  ],
   "main": "index.json",
   "browser": "index.json",
   "dependencies": {},
   "devDependencies": {
-    "assert-helpers": "^4.2.0",
-    "joe": "^1.6.0",
-    "joe-reporter-console": "^1.2.1",
-    "projectz": "^1.0.0"
+    "assert-helpers": "^4.5.0",
+    "joe": "^2.0.2",
+    "joe-reporter-console": "^2.0.1",
+    "projectz": "^1.4.0"
   },
   "scripts": {
-    "setup": "npm install",
-    "meta": "npm run meta:projectz",
-    "meta:projectz": "projectz compile",
-    "prepare": "npm run test && npm run meta",
-    "release": "npm run prepare && npm run release:publish && npm run release:tag && npm run release:push",
-    "release:publish": "npm publish",
-    "release:tag": "git tag v$npm_package_version -a",
-    "release:push": "git push origin master && git push origin --tags",
-    "test": "node --harmony ./test.js"
+    "our:setup": "npm run our:setup:npm",
+    "our:setup:npm": "npm install",
+    "our:clean": "rm -Rf ./docs ./es2015 ./es5 ./out",
+    "our:compile": "echo no need for this project",
+    "our:meta": "npm run our:meta:projectz",
+    "our:meta:projectz": "projectz compile",
+    "our:verify": "echo no need for this project",
+    "our:test": "npm run our:verify && npm test",
+    "our:release": "npm run our:release:prepare && npm run our:release:check && npm run our:release:tag && npm run our:release:push",
+    "our:release:prepare": "npm run our:clean && npm run our:compile && npm run our:test && npm run our:meta",
+    "our:release:check": "npm run our:release:check:changelog && npm run our:release:check:dirty",
+    "our:release:check:changelog": "cat ./HISTORY.md | grep v$npm_package_version || (echo add a changelog entry for v$npm_package_version && exit -1)",
+    "our:release:check:dirty": "git diff --exit-code",
+    "our:release:tag": "export MESSAGE=$(cat ./HISTORY.md | sed -n \"/## v$npm_package_version/,/##/p\" | sed 's/## //' | awk 'NR>1{print buf}{buf = $0}') && test \"$MESSAGE\" || (echo 'proper changelog entry not found' && exit -1) && git tag v$npm_package_version -am \"$MESSAGE\"",
+    "our:release:push": "git push origin master && git push origin --tags",
+    "test": "node --harmony ./test.js --joe-reporter=console"
   }
 }
