@@ -1,5 +1,9 @@
 # History
 
+## v2.1.0 2017 April 24
+- Added noon and pug
+  - Thanks to [monsterkodi](https://github.com/monsterkodi) for [pull request #4](https://github.com/bevry/textextensions/pull/4)
+
 ## v2.0.1 2016 May 10
 - JSON should have two space indentation
 

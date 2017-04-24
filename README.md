@@ -54,7 +54,8 @@ A package that contains an array of every single file extension there is for tex
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>textextensions/./index.json</code> is JSON</li></ul>
+<ul><li><code>textextensions</code> aliases <code>textextensions/index.json</code></li>
+<li><code>textextensions/index.json</code> is JSON</li></ul>
 
 <!-- /INSTALL -->
 

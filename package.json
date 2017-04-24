@@ -60,7 +60,6 @@
   "editions": [
     {
       "description": "JSON",
-      "directory": ".",
       "entry": "index.json",
       "syntaxes": [
         "json"
