@@ -54,8 +54,8 @@ A package that contains an array of every single file extension there is for tex
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>textextensions</code> aliases <code>textextensions/index.json</code></li>
-<li><code>textextensions/index.json</code> is JSON</li></ul>
+<ul><li><code>textextensions</code> aliases <code>textextensions/source/index.json</code></li>
+<li><code>textextensions/source/index.json</code> is JSON</li></ul>
 
 <!-- /INSTALL -->
 
@@ -111,7 +111,9 @@ These amazing people have contributed code to this project:
 
 <ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/JamyDev">Jamy Timmermans</a> — <a href="https://github.com/bevry/textextensions/commits?author=JamyDev" title="View the GitHub contributions of Jamy Timmermans on repository bevry/textextensions">view contributions</a></li>
-<li><a href="https://github.com/FelipeBB">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=FelipeBB" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li></ul>
+<li><a href="https://github.com/fbeline">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=fbeline" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li>
+<li><a href="http://src.works">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li>
+<li><a href="http://monsterkodi.github.io">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/textextensions/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

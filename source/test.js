@@ -1,8 +1,8 @@
-/* eslint-env node */
+'use strict'
+
 // should be consistent between
 // https://github.com/bevry/textextensions/blob/master/test.js
 // https://github.com/bevry/binaryextensions/blob/master/test.js
-'use strict'
 
 var fs = require('fs')
 var assert = require('assert-helpers')
@@ -15,7 +15,7 @@ suite('extensions', function (suite, test) {
 
 	test('read the file', function (next) {
 		fs.readFile(sourcePath, function (error, data) {
-			if ( error )  return next(error)
+			if (error) return next(error)
 			sourceContent = data.toString().trim()
 			next()
 		})
@@ -37,10 +37,10 @@ suite('extensions', function (suite, test) {
 				expected
 			)
 		}
-		catch ( err ) {
+		catch (err) {
 			console.log('format was not correct, fixing...')
 			return fs.writeFile(sourcePath, expected, function (error) {
-				if ( error )  return next(error)
+				if (error) return next(error)
 				sourceContent = expected
 				console.log('fixed indentation for next commit')
 				return next(err)
@@ -52,7 +52,7 @@ suite('extensions', function (suite, test) {
 	test('data had duplicates removed', function () {
 		var map = {}
 		sourceData.filter(function (i) {
-			if ( typeof map[i] === 'undefined' ) {
+			if (typeof map[i] === 'undefined') {
 				map[i] = true
 				return true
 			}

@@ -44,8 +44,10 @@
   ],
   "contributors": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
-    "Jamy Timmermans <jamy@beam.pro> (https://github.com/JamyDev)",
-    "Felipe Beline <fe.belineb@gmail.com> (https://github.com/FelipeBB)"
+    "Jamy Timmermans <jamy@mixer.com> (https://github.com/JamyDev)",
+    "Felipe Beline <fe.belineb@gmail.com> (https://github.com/fbeline)",
+    "jaswrks (http://src.works)",
+    "monsterkodi (http://monsterkodi.github.io)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
@@ -60,17 +62,19 @@
   "editions": [
     {
       "description": "JSON",
+      "directory": "source",
       "entry": "index.json",
       "syntaxes": [
         "json"
       ]
     }
   ],
-  "main": "index.json",
-  "browser": "index.json",
+  "main": "source/index.json",
+  "browser": "source/index.json",
   "dependencies": {},
   "devDependencies": {
     "assert-helpers": "^4.5.0",
+    "eslint": "^4.16.0",
     "joe": "^2.0.2",
     "joe-reporter-console": "^2.0.1",
     "projectz": "^1.4.0"
@@ -82,7 +86,8 @@
     "our:compile": "echo no need for this project",
     "our:meta": "npm run our:meta:projectz",
     "our:meta:projectz": "projectz compile",
-    "our:verify": "echo no need for this project",
+    "our:verify": "npm run our:verify:eslint",
+    "our:verify:eslint": "eslint --fix ./source",
     "our:test": "npm run our:verify && npm test",
     "our:release": "npm run our:release:prepare && npm run our:release:check && npm run our:release:tag && npm run our:release:push",
     "our:release:prepare": "npm run our:clean && npm run our:compile && npm run our:test && npm run our:meta",
@@ -91,6 +96,6 @@
     "our:release:check:dirty": "git diff --exit-code",
     "our:release:tag": "export MESSAGE=$(cat ./HISTORY.md | sed -n \"/## v$npm_package_version/,/##/p\" | sed 's/## //' | awk 'NR>1{print buf}{buf = $0}') && test \"$MESSAGE\" || (echo 'proper changelog entry not found' && exit -1) && git tag v$npm_package_version -am \"$MESSAGE\"",
     "our:release:push": "git push origin master && git push origin --tags",
-    "test": "node --harmony ./test.js --joe-reporter=console"
+    "test": "node --harmony source/test.js --joe-reporter=console"
   }
 }
