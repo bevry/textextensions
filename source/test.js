@@ -4,14 +4,14 @@
 // https://github.com/bevry/textextensions/blob/master/test.js
 // https://github.com/bevry/binaryextensions/blob/master/test.js
 
-var fs = require('fs')
-var assert = require('assert-helpers')
-var sourcePath = require('path').join(__dirname, 'index.json')
-var suite = require('joe').suite
-var indentation = '  '
+const fs = require('fs')
+const assert = require('assert-helpers')
+const sourcePath = require('path').join(__dirname, 'index.json')
+const suite = require('joe').suite
+const indentation = '  '
 
 suite('extensions', function (suite, test) {
-	var sourceContent, sourceData
+	let sourceContent, sourceData
 
 	test('read the file', function (next) {
 		fs.readFile(sourcePath, function (error, data) {
@@ -30,7 +30,7 @@ suite('extensions', function (suite, test) {
 	})
 
 	test('data had correct format', function (next) {
-		var expected = JSON.stringify(sourceData, null, indentation)
+		const expected = JSON.stringify(sourceData, null, indentation)
 		try {
 			assert.equal(
 				sourceContent,
@@ -50,7 +50,7 @@ suite('extensions', function (suite, test) {
 	})
 
 	test('data had duplicates removed', function () {
-		var map = {}
+		const map = {}
 		sourceData.filter(function (i) {
 			if (typeof map[i] === 'undefined') {
 				map[i] = true
@@ -61,10 +61,11 @@ suite('extensions', function (suite, test) {
 	})
 
 	test('data was sorted', function () {
-		var expected = sourceData.slice().sort()
+		const expected = sourceData.slice().sort()
 		assert.equal(
 			sourceContent,
 			JSON.stringify(expected, null, indentation)
 		)
 	})
+
 })
