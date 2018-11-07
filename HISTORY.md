@@ -1,5 +1,10 @@
 # History
 
+## v2.3.0 2018 November 7
+- Added a dozen or so new text extensions
+    - Thanks to [Joshua Evans](https://github.com/TheJoshuaEvans) for [pull request #6](https://github.com/bevry/textextensions/pull/6)
+- Updated [base files](https://github.com/bevry/base) and [editions](https://github.com/bevry/editions) using [boundation](https://github.com/bevry/boundation)
+
 ## v2.2.0 2018 January 25
 - Added a dozen or so new text extensions
     - Thanks to [jaswrks](https://github.com/jaswrks) for [pull request #5](https://github.com/bevry/textextensions/pull/5)

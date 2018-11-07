@@ -1,13 +1,15 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
   "keywords": [
     "text",
-    "extensions"
+    "extensions",
+    "text extensions",
+    "text-extensions"
   ],
   "badges": {
     "list": [
