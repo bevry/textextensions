@@ -29,6 +29,16 @@ suite('extensions', function (suite, test) {
 		sourceData = JSON.parse(sourceContent)
 	})
 
+	test('data had no binary extensions', function () {
+		const aliens = require('binaryextensions')
+		const duplicates = sourceData.filter((local) => aliens.includes(local))
+		assert.deepEqual(
+			duplicates,
+			[],
+			'there should be no text extensions that are present inside binaryextensions'
+		)
+	})
+
 	test('data had correct format', function (next) {
 		const expected = JSON.stringify(sourceData, null, indentation)
 		try {

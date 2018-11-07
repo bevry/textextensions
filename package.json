@@ -82,6 +82,7 @@
   "dependencies": {},
   "devDependencies": {
     "assert-helpers": "^4.5.1",
+    "binaryextensions": "^2.1.2",
     "joe": "^2.0.2",
     "joe-reporter-console": "^2.0.2",
     "projectz": "^1.4.0",
