@@ -67,9 +67,6 @@ A package that contains an array of every single file extension there is for tex
 console.log(require('textextensions'))
 ```
 
-
-## Contribute
-
 Missing an extension? [Send a pull request!](https://github.com/bevry/textextensions/edit/master/source/index.json)
 
 Want a definitive list of binary extensions? Check out [bevry/binaryextensions](https://github.com/bevry/binaryextensions)
