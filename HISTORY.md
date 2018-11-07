@@ -1,5 +1,9 @@
 # History
 
+## v2.4.0 2018 November 7
+- Add `wxml`
+    - Thanks to [刘祺](https://github.com/gucong3000) for [istextorbinary issue #9](https://github.com/bevry/istextorbinary/issues/9)
+
 ## v2.3.1 2018 November 7
 - readme updates
 
