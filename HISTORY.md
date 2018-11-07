@@ -1,5 +1,8 @@
 # History
 
+## v2.3.1 2018 November 7
+- readme updates
+
 ## v2.3.0 2018 November 7
 - Added a dozen or so new text extensions
     - Thanks to [Joshua Evans](https://github.com/TheJoshuaEvans) for [pull request #6](https://github.com/bevry/textextensions/pull/6)
