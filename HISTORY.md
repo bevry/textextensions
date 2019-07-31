@@ -1,5 +1,9 @@
 # History
 
+## v2.5.0 2019 July 31
+- Add `njk` and `wxss`
+    - Thanks to [LvChengbin](https://github.com/LvChengbin) for [pull request #8](https://github.com/bevry/textextensions/pull/8)
+
 ## v2.4.0 2018 November 7
 - Add `wxml`
     - Thanks to [刘祺](https://github.com/gucong3000) for [istextorbinary issue #9](https://github.com/bevry/istextorbinary/issues/9)

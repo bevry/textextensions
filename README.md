@@ -38,20 +38,21 @@ A package that contains an array of every single file extension there is for tex
 
 <h2>Install</h2>
 
-<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>NPM</h3></a><ul>
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
+<ul>
 <li>Install: <code>npm install --save textextensions</code></li>
-<li>Module: <code>require('textextensions')</code></li></ul>
+<li>Require: <code>require('textextensions')</code></li>
+</ul>
 
-<a href="http://browserify.org" title="Browserify lets you require('modules') in the browser by bundling up all of your dependencies"><h3>Browserify</h3></a><ul>
-<li>Install: <code>npm install --save textextensions</code></li>
-<li>Module: <code>require('textextensions')</code></li>
-<li>CDN URL: <code>//wzrd.in/bundle/textextensions@2.4.0</code></li></ul>
+<a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
 
-<a href="http://enderjs.com" title="Ender is a full featured package manager for your browser"><h3>Ender</h3></a><ul>
-<li>Install: <code>ender add textextensions</code></li>
-<li>Module: <code>require('textextensions')</code></li></ul>
+``` html
+<script type="module">
+    import * as pkg from '//dev.jspm.io/textextensions'
+</script>
+```
 
-<h3><a href="https://github.com/bevry/editions" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
+<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
 
 <p>This package is published with the following editions:</p>
 
@@ -117,7 +118,9 @@ These amazing people have contributed code to this project:
 <li><a href="http://blog.fbeline.com">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=fbeline" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li>
 <li><a href="http://src.works">jaswrks</a></li>
 <li><a href="http://monsterkodi.github.io">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://jaswrks.com">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li></ul>
+<li><a href="http://jaswrks.com">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li>
+<li><a href="http://www.linkedin.com/profile/view?id=351521559">Joshua Evans</a> — <a href="https://github.com/bevry/textextensions/commits?author=TheJoshuaEvans" title="View the GitHub contributions of Joshua Evans on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/LvChengbin">LvChengbin</a> — <a href="https://github.com/bevry/textextensions/commits?author=LvChengbin" title="View the GitHub contributions of LvChengbin on repository bevry/textextensions">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/textextensions/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

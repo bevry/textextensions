@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
@@ -51,7 +51,9 @@
     "Felipe Beline <fe.belineb@gmail.com> (http://blog.fbeline.com)",
     "jaswrks (http://src.works)",
     "monsterkodi (http://monsterkodi.github.io)",
-    "jaswrks (http://jaswrks.com)"
+    "jaswrks (http://jaswrks.com)",
+    "Joshua Evans (http://www.linkedin.com/profile/view?id=351521559)",
+    "LvChengbin (https://github.com/LvChengbin)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
@@ -81,11 +83,11 @@
   "browser": "source/index.json",
   "dependencies": {},
   "devDependencies": {
-    "assert-helpers": "^4.5.1",
+    "assert-helpers": "^4.9.6",
     "binaryextensions": "^2.1.2",
     "joe": "^2.0.2",
     "joe-reporter-console": "^2.0.2",
-    "projectz": "^1.4.0",
+    "projectz": "^1.7.4",
     "valid-directory": "^1.0.0"
   },
   "optionalDependencies": {},
