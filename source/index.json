@@ -284,5 +284,7 @@
   "yaml",
   "yml",
   "zsh",
-  "zshrc"
+  "zshrc",
+  "njk",
+  "wxss"
 ]
