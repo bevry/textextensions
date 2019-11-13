@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
@@ -22,8 +22,6 @@
       "patreon",
       "flattr",
       "liberapay",
-      "thanksapp",
-      "boostlab",
       "buymeacoffee",
       "opencollective",
       "crypto",
@@ -38,9 +36,11 @@
       "opencollectiveUsername": "bevry",
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
-      "wishlistURL": "https://bevry.me/wishlist"
+      "wishlistURL": "https://bevry.me/wishlist",
+      "travisTLD": "com"
     }
   },
+  "funding": "https://bevry.me/fund",
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
@@ -48,12 +48,12 @@
   "contributors": [
     "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
     "Jamy Timmermans <jamy@mixer.com> (https://github.com/JamyDev)",
-    "Felipe Beline <fe.belineb@gmail.com> (http://blog.fbeline.com)",
+    "Felipe Beline <felipe@fbeline.com> (http://blog.fbeline.com)",
     "jaswrks (http://src.works)",
     "monsterkodi (http://monsterkodi.github.io)",
     "jaswrks (http://jaswrks.com)",
-    "Joshua Evans (http://www.linkedin.com/profile/view?id=351521559)",
-    "LvChengbin (https://github.com/LvChengbin)"
+    "Joshua Evans <TheJoshuaEvans@gmail.com> (http://www.linkedin.com/profile/view?id=351521559)",
+    "LvChengbin <lvchengbin59@gmail.com> (https://github.com/LvChengbin)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
@@ -70,29 +70,26 @@
       "description": "JSON",
       "directory": "source",
       "entry": "index.json",
-      "syntaxes": [
+      "tags": [
         "json"
       ],
       "engines": {
-        "node": ">=0.8",
+        "node": true,
         "browsers": true
       }
     }
   ],
   "main": "source/index.json",
   "browser": "source/index.json",
-  "dependencies": {},
   "devDependencies": {
-    "assert-helpers": "^4.9.6",
+    "assert-helpers": "4.10.0",
     "binaryextensions": "^2.1.2",
-    "joe": "^2.0.2",
-    "joe-reporter-console": "^2.0.2",
-    "projectz": "^1.7.4",
+    "kava": "^3.2.0",
+    "projectz": "^1.10.0",
     "valid-directory": "^1.0.0"
   },
-  "optionalDependencies": {},
   "scripts": {
-    "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out",
+    "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
     "our:compile": "echo no need for this project",
     "our:deploy": "echo no need for this project",
     "our:meta": "npm run our:meta:projectz",
@@ -103,11 +100,11 @@
     "our:release:prepare": "npm run our:clean && npm run our:compile && npm run our:test && npm run our:meta",
     "our:release:push": "git push origin master && git push origin --tags",
     "our:release:tag": "export MESSAGE=$(cat ./HISTORY.md | sed -n \"/## v$npm_package_version/,/##/p\" | sed 's/## //' | awk 'NR>1{print buf}{buf = $0}') && test \"$MESSAGE\" || (echo 'proper changelog entry not found' && exit -1) && git tag v$npm_package_version -am \"$MESSAGE\"",
-    "our:setup": "npm run our:setup:npm",
-    "our:setup:npm": "npm install",
+    "our:setup": "npm run our:setup:install",
+    "our:setup:install": "npm install",
     "our:test": "npm run our:verify && npm test",
     "our:verify": "npm run our:verify:directory",
     "our:verify:directory": "npx valid-directory",
-    "test": "node --harmony ./source/test.js --joe-reporter=console"
+    "test": "node ./source/test.js"
   }
 }

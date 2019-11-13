@@ -7,7 +7,7 @@
 const fs = require('fs')
 const assert = require('assert-helpers')
 const sourcePath = require('path').join(__dirname, 'index.json')
-const suite = require('joe').suite
+const suite = require('kava').suite
 const indentation = '  '
 
 suite('extensions', function (suite, test) {
