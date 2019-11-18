@@ -1,6 +1,8 @@
 sudo: false
 language: node_js
 node_js:
+- '8'
+- '10'
 - '12'
 matrix:
   fast_finish: true
@@ -15,4 +17,4 @@ after_success:
 notifications:
   email:
     recipients:
-      secure: odDBE8C+aH1kvH41yqn/X+QvIh6W2wqvA8t1pCzqVwdYUQt9BN9zzRfZxaJ/o93RITy9pZMYBW5WvuQcVhJ4jt96WnHgUlRRge/BXxQxmDgzvOX5/T2tlBC1/0QjDZAGMzHYKJ5b66K8ako0V/VCTZuLRe/Pijlxs4zLvyoaJrA=
+      secure: TRx5+ZGNmNaRLGgxNO4fmfqnF7fwSGXIep+N03y7YFbfr74U24TWt7E8AaauoOGu72ksqHloCrsJTErW89juYmTYi102Un1xpSF+ldRg4BFNB8L1yXQkN+ptQFWU03UCat8E40xXBayoEutHnGXVNgwOjC+7Qa9A9qx/u3VNSYQ=
