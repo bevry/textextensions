@@ -116,7 +116,8 @@ These amazing people have contributed code to this project:
 <li><a href="http://monsterkodi.github.io">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li>
 <li><a href="http://jaswrks.com">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li>
 <li><a href="http://www.linkedin.com/profile/view?id=351521559">Joshua Evans</a> — <a href="https://github.com/bevry/textextensions/commits?author=TheJoshuaEvans" title="View the GitHub contributions of Joshua Evans on repository bevry/textextensions">view contributions</a></li>
-<li><a href="https://github.com/LvChengbin">LvChengbin</a> — <a href="https://github.com/bevry/textextensions/commits?author=LvChengbin" title="View the GitHub contributions of LvChengbin on repository bevry/textextensions">view contributions</a></li></ul>
+<li><a href="https://github.com/LvChengbin">LvChengbin</a> — <a href="https://github.com/bevry/textextensions/commits?author=LvChengbin" title="View the GitHub contributions of LvChengbin on repository bevry/textextensions">view contributions</a></li>
+<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/textextensions/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/textextensions">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/textextensions/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 
