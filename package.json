@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
@@ -19,6 +19,7 @@
       "daviddm",
       "daviddmdev",
       "---",
+      "githubsponsors",
       "patreon",
       "flattr",
       "liberapay",
@@ -29,6 +30,7 @@
       "wishlist"
     ],
     "config": {
+      "githubSponsorsUsername": "balupton",
       "buymeacoffeeUsername": "balupton",
       "cryptoURL": "https://bevry.me/crypto",
       "flattrUsername": "balupton",
@@ -80,14 +82,15 @@
       }
     }
   ],
+  "type": "commonjs",
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "assert-helpers": "^5.7.0",
+    "assert-helpers": "^5.8.0",
     "binaryextensions": "^2.2.0",
-    "kava": "^4.2.0",
-    "projectz": "^1.13.0",
-    "valid-directory": "^1.4.0"
+    "kava": "^4.4.0",
+    "projectz": "^1.16.0",
+    "valid-directory": "^1.5.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
