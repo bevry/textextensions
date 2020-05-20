@@ -42,12 +42,8 @@ suite('extensions', function (suite, test) {
 	test('data had correct format', function (next) {
 		const expected = JSON.stringify(sourceData, null, indentation)
 		try {
-			assert.equal(
-				sourceContent,
-				expected
-			)
-		}
-		catch (err) {
+			assert.equal(sourceContent, expected)
+		} catch (err) {
 			console.log('format was not correct, fixing...')
 			return fs.writeFile(sourcePath, expected, function (error) {
 				if (error) return next(error)
@@ -72,10 +68,6 @@ suite('extensions', function (suite, test) {
 
 	test('data was sorted', function () {
 		const expected = sourceData.slice().sort()
-		assert.equal(
-			sourceContent,
-			JSON.stringify(expected, null, indentation)
-		)
+		assert.equal(sourceContent, JSON.stringify(expected, null, indentation))
 	})
-
 })
