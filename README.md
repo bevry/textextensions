@@ -46,6 +46,9 @@ Want a definitive list of binary extensions? Check out [bevry/binaryextensions](
 Want to detect if a file is text or binary? Check out [bevry/istextorbinary](https://github.com/bevry/istextorbinary)
 
 
+
+
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
@@ -61,7 +64,7 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/textextensions@4.2.0'
+    import * as pkg from '//dev.jspm.io/textextensions@4.3.0'
 </script>
 ```
 
