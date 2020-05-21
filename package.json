@@ -1,13 +1,16 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "3.3.0",
+  "version": "4.2.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
   "keywords": [
-    "text",
+    "browser",
     "extensions",
+    "json",
+    "node",
+    "text",
     "text extensions",
     "text-extensions"
   ],
@@ -39,24 +42,27 @@
       "patreonUsername": "bevry",
       "paypalURL": "https://bevry.me/paypal",
       "wishlistURL": "https://bevry.me/wishlist",
-      "travisTLD": "com"
+      "travisTLD": "com",
+      "githubUsername": "bevry",
+      "githubRepository": "textextensions",
+      "githubSlug": "bevry/textextensions",
+      "npmPackageName": "textextensions"
     }
   },
   "funding": "https://bevry.me/fund",
   "author": "2013+ Bevry Pty Ltd <us@bevry.me> (http://bevry.me)",
   "maintainers": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)"
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
   ],
   "contributors": [
-    "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+    "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "Felipe Beline <felipe@fbeline.com> (https://github.com/fbeline)",
     "Jamy Timmermans <jamy@mixer.com> (https://github.com/JamyDev)",
-    "Felipe Beline <felipe@fbeline.com> (http://blog.fbeline.com)",
-    "jaswrks (http://src.works)",
-    "monsterkodi (http://monsterkodi.github.io)",
-    "jaswrks (http://jaswrks.com)",
-    "Joshua Evans <TheJoshuaEvans@gmail.com> (http://www.linkedin.com/profile/view?id=351521559)",
+    "Joshua Evans <TheJoshuaEvans@gmail.com> (https://github.com/TheJoshuaEvans)",
     "LvChengbin <lvchengbin59@gmail.com> (https://github.com/LvChengbin)",
-    "dependabot-preview[bot] (http://github.com/apps/dependabot-preview)"
+    "jaswrks (http://src.works)",
+    "jaswrks (https://github.com/jaswrks)",
+    "monsterkodi (https://github.com/monsterkodi)"
   ],
   "bugs": {
     "url": "https://github.com/bevry/textextensions/issues"
@@ -66,7 +72,7 @@
     "url": "https://github.com/bevry/textextensions.git"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "editions": [
     {
@@ -86,17 +92,19 @@
   "main": "source/index.json",
   "browser": "source/index.json",
   "devDependencies": {
-    "assert-helpers": "^5.8.0",
+    "@bevry/update-contributors": "^1.6.0",
+    "assert-helpers": "^6.5.0",
     "binaryextensions": "^2.2.0",
-    "kava": "^4.4.0",
-    "projectz": "^1.16.0",
-    "valid-directory": "^1.5.0"
+    "kava": "^5.1.0",
+    "projectz": "^2.2.0",
+    "valid-directory": "^2.0.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
     "our:compile": "echo no need for this project",
     "our:deploy": "echo no need for this project",
-    "our:meta": "npm run our:meta:projectz",
+    "our:meta": "npm run our:meta:contributors && npm run our:meta:projectz",
+    "our:meta:contributors": "update-contributors",
     "our:meta:projectz": "projectz compile",
     "our:release": "npm run our:release:prepare && npm run our:release:check-changelog && npm run our:release:check-dirty && npm run our:release:tag && npm run our:release:push",
     "our:release:check-changelog": "cat ./HISTORY.md | grep v$npm_package_version || (echo add a changelog entry for v$npm_package_version && exit -1)",
@@ -108,7 +116,7 @@
     "our:setup:install": "npm install",
     "our:test": "npm run our:verify && npm test",
     "our:verify": "npm run our:verify:directory",
-    "our:verify:directory": "npx valid-directory",
+    "our:verify:directory": "valid-directory",
     "test": "node ./source/test.js"
   }
 }

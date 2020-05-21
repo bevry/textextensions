@@ -33,34 +33,6 @@ A package that contains an array of every single file extension there is for tex
 <!-- /DESCRIPTION -->
 
 
-<!-- INSTALL/ -->
-
-<h2>Install</h2>
-
-<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
-<ul>
-<li>Install: <code>npm install --save textextensions</code></li>
-<li>Require: <code>require('textextensions')</code></li>
-</ul>
-
-<a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
-
-``` html
-<script type="module">
-    import * as pkg from '//dev.jspm.io/textextensions'
-</script>
-```
-
-<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
-
-<p>This package is published with the following editions:</p>
-
-<ul><li><code>textextensions</code> aliases <code>textextensions/source/index.json</code></li>
-<li><code>textextensions/source/index.json</code> is JSON</li></ul>
-
-<!-- /INSTALL -->
-
-
 ## Usage
 
 ``` javascript
@@ -72,6 +44,35 @@ Missing an extension? [Send a pull request!](https://github.com/bevry/textextens
 Want a definitive list of binary extensions? Check out [bevry/binaryextensions](https://github.com/bevry/binaryextensions)
 
 Want to detect if a file is text or binary? Check out [bevry/istextorbinary](https://github.com/bevry/istextorbinary)
+
+
+<!-- INSTALL/ -->
+
+<h2>Install</h2>
+
+<a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
+<ul>
+<li>Install: <code>npm install --save textextensions</code></li>
+<li>Import: <code>import * as pkg from ('textextensions')</code></li>
+<li>Require: <code>const pkg = require('textextensions')</code></li>
+</ul>
+
+<a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
+
+``` html
+<script type="module">
+    import * as pkg from '//dev.jspm.io/textextensions@4.2.0'
+</script>
+```
+
+<h3><a href="https://editions.bevry.me" title="Editions are the best way to produce and consume packages you care about.">Editions</a></h3>
+
+<p>This package is published with the following editions:</p>
+
+<ul><li><code>textextensions</code> aliases <code>textextensions/source/index.json</code></li>
+<li><code>textextensions/source/index.json</code> is JSON</li></ul>
+
+<!-- /INSTALL -->
 
 
 <!-- HISTORY/ -->
@@ -91,7 +92,7 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 These amazing people are maintaining this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li></ul>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li></ul>
 
 <h3>Sponsors</h3>
 
@@ -111,15 +112,14 @@ No sponsors yet! Will you be the first?
 
 These amazing people have contributed code to this project:
 
-<ul><li><a href="http://balupton.com">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li>
+<ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/fbeline">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=fbeline" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/JamyDev">Jamy Timmermans</a> — <a href="https://github.com/bevry/textextensions/commits?author=JamyDev" title="View the GitHub contributions of Jamy Timmermans on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://blog.fbeline.com">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=fbeline" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://src.works">jaswrks</a></li>
-<li><a href="http://monsterkodi.github.io">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://jaswrks.com">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://www.linkedin.com/profile/view?id=351521559">Joshua Evans</a> — <a href="https://github.com/bevry/textextensions/commits?author=TheJoshuaEvans" title="View the GitHub contributions of Joshua Evans on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/TheJoshuaEvans">Joshua Evans</a> — <a href="https://github.com/bevry/textextensions/commits?author=TheJoshuaEvans" title="View the GitHub contributions of Joshua Evans on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/LvChengbin">LvChengbin</a> — <a href="https://github.com/bevry/textextensions/commits?author=LvChengbin" title="View the GitHub contributions of LvChengbin on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://github.com/apps/dependabot-preview">dependabot-preview[bot]</a> — <a href="https://github.com/bevry/textextensions/commits?author=dependabot-preview[bot]" title="View the GitHub contributions of dependabot-preview[bot] on repository bevry/textextensions">view contributions</a></li></ul>
+<li><a href="http://src.works">jaswrks</a></li>
+<li><a href="https://github.com/jaswrks">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/monsterkodi">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li></ul>
 
 <a href="https://github.com/bevry/textextensions/blob/master/CONTRIBUTING.md#files">Discover how you can contribute by heading on over to the <code>CONTRIBUTING.md</code> file.</a>
 

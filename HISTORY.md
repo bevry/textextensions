@@ -1,5 +1,10 @@
 # History
 
+## v4.2.0 2020 May 21
+
+-   Fixed the busted v4.1.0 and v4.0.0 versions
+-   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
+
 ## v3.3.0 2019 December 10
 
 -   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
