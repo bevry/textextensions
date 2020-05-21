@@ -49,6 +49,9 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 
 
+
+
+
 <!-- INSTALL/ -->
 
 <h2>Install</h2>
@@ -64,7 +67,7 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/textextensions@4.3.0'
+    import * as pkg from '//dev.jspm.io/textextensions@4.4.0'
 </script>
 ```
 
