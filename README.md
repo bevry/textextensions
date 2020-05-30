@@ -35,22 +35,27 @@ A package that contains an array of every single file extension there is for tex
 
 ## Usage
 
-``` javascript
-console.log(require('textextensions'))
+[Complete API Documentation.](http://master.textextensions.bevry.surge.sh/docs/globals.html)
+
+```typescript
+import list from 'textextensions'
+console.log(list)
 ```
 
-Missing an extension? [Send a pull request!](https://github.com/bevry/textextensions/edit/master/source/index.json)
+```javascript
+const list = require('textextensions').default
+console.log(list)
+```
+
+JSON also available via `textextensions/list.json`
+
+CDN access available via https://unpkg.com/textextensions/list.json
+
+Missing an extension? [Send a pull request!](https://github.com/bevry/textextensions/edit/master/source/index.ts)
 
 Want a definitive list of binary extensions? Check out [bevry/binaryextensions](https://github.com/bevry/binaryextensions)
 
 Want to detect if a file is text or binary? Check out [bevry/istextorbinary](https://github.com/bevry/istextorbinary)
-
-
-
-
-
-
-
 
 <!-- INSTALL/ -->
 
@@ -59,15 +64,31 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 <a href="https://npmjs.com" title="npm is a package manager for javascript"><h3>npm</h3></a>
 <ul>
 <li>Install: <code>npm install --save textextensions</code></li>
-<li>Import: <code>import * as pkg from ('textextensions')</code></li>
-<li>Require: <code>const pkg = require('textextensions')</code></li>
+<li>Import: <code>import pkg from ('textextensions')</code></li>
+<li>Require: <code>const pkg = require('textextensions').default</code></li>
 </ul>
+
+<a href="https://www.pika.dev/cdn" title="100% Native ES Modules CDN"><h3>pika</h3></a>
+
+``` html
+<script type="module">
+    import pkg from '//cdn.pika.dev/textextensions/^5.0.0'
+</script>
+```
+
+<a href="https://unpkg.com" title="unpkg is a fast, global content delivery network for everything on npm"><h3>unpkg</h3></a>
+
+``` html
+<script type="module">
+    import pkg from '//unpkg.com/textextensions@^5.0.0'
+</script>
+```
 
 <a href="https://jspm.io" title="Native ES Modules CDN"><h3>jspm</h3></a>
 
 ``` html
 <script type="module">
-    import * as pkg from '//dev.jspm.io/textextensions@4.4.0'
+    import pkg from '//dev.jspm.io/textextensions@5.0.0'
 </script>
 ```
 
@@ -75,8 +96,10 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 <p>This package is published with the following editions:</p>
 
-<ul><li><code>textextensions</code> aliases <code>textextensions/source/index.json</code></li>
-<li><code>textextensions/source/index.json</code> is JSON</li></ul>
+<ul><li><code>textextensions/source/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>textextensions/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#10th_Edition_-_ECMAScript_2019" title="ECMAScript ES2019">ES2019</a> for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>textextensions</code> aliases <code>textextensions/edition-es5/index.js</code></li>
+<li><code>textextensions/edition-es5/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against ES5 for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li></ul>
 
 <!-- /INSTALL -->
 

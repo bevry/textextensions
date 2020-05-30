@@ -2,6 +2,9 @@ version: ~> 1.0
 sudo: false
 language: node_js
 node_js:
+  - '10'
+  - '12'
+  - '13'
   - '14'
 matrix:
   fast_finish: true
@@ -18,8 +21,11 @@ before_script:
 after_success:
   - >-
     eval "$(curl -fsSL
+    https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/surge.bash)"
+  - >-
+    eval "$(curl -fsSL
     https://raw.githubusercontent.com/bevry/awesome-travis/9fa2fa025c77b463d03154f39922af95cadc9c67/scripts/node-publish.bash)"
 notifications:
   email:
     recipients: >-
-      iFKe3hoI3+dOjc8CUXsOJSAPwEH/YOG0WwwgZDJceYACo5+Af6jyoExhSyTDcOGVbfbvRz4R99GUVhguFjyHgvDCzd/EHcU1Un6mjfvQ3C6mlRE+pMpVLG+kBocslQb0tbeO8/A5IA7/1pygRSdYfpUeZBC7/5X4RhCe7SerrPU=
+      LRkduQPxo1ZivMOFG+3cgSedqy3BNtTED5mSrTCnoBjGy/MFD08Y7CaddDG/bqBKrLYIkKt5mEWku/BzI0pSzqKOAVFNLWZLDGdb3pjI6vzgX7/PHkDOoKaIXvcUErzUwPhMoaOiFW72rRPNt+wsodNgWbiYXn9XnCQnxlYCktY=
