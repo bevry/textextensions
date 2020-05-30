@@ -205,6 +205,7 @@ const list = [
 	'rhtml',
 	'rjs',
 	'rlib',
+	'rmd',
 	'ron',
 	'rs',
 	'rss',
