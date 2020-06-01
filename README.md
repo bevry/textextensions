@@ -72,7 +72,7 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.pika.dev/textextensions/^5.0.0'
+    import pkg from '//cdn.pika.dev/textextensions/^5.1.0'
 </script>
 ```
 
@@ -80,7 +80,7 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/textextensions@^5.0.0'
+    import pkg from '//unpkg.com/textextensions@^5.1.0'
 </script>
 ```
 
@@ -88,7 +88,7 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/textextensions@5.0.0'
+    import pkg from '//dev.jspm.io/textextensions@5.1.0'
 </script>
 ```
 
@@ -142,11 +142,11 @@ No sponsors yet! Will you be the first?
 These amazing people have contributed code to this project:
 
 <ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/brianlukoff">Brian Lukoff</a> — <a href="https://github.com/bevry/textextensions/commits?author=brianlukoff" title="View the GitHub contributions of Brian Lukoff on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/fbeline">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=fbeline" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/JamyDev">Jamy Timmermans</a> — <a href="https://github.com/bevry/textextensions/commits?author=JamyDev" title="View the GitHub contributions of Jamy Timmermans on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/TheJoshuaEvans">Joshua Evans</a> — <a href="https://github.com/bevry/textextensions/commits?author=TheJoshuaEvans" title="View the GitHub contributions of Joshua Evans on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/LvChengbin">LvChengbin</a> — <a href="https://github.com/bevry/textextensions/commits?author=LvChengbin" title="View the GitHub contributions of LvChengbin on repository bevry/textextensions">view contributions</a></li>
-<li><a href="http://src.works">jaswrks</a></li>
 <li><a href="https://github.com/jaswrks">jaswrks</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of jaswrks on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/monsterkodi">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li></ul>
 

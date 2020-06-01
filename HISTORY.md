@@ -1,5 +1,10 @@
 # History
 
+## v5.1.0 2020 June 1
+
+-   Added RMarkdown support via `rmd` extension
+    -   Thanks to [Brian Lukoff](https://github.com/brianlukoff) for [pull request #26](https://github.com/bevry/textextensions/pull/26)
+
 ## v5.0.0 2020 May 30
 
 -   Breaking Change: If you are using CommonJS, you must now do `require('textextensions').default`
