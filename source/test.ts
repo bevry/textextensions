@@ -6,7 +6,7 @@ import list from './index.js'
 import aliens from 'binaryextensions'
 
 import { equal, deepEqual } from 'assert-helpers'
-import { suite } from 'kava'
+import kava from 'kava'
 import { writeFile } from 'fs'
 import { join } from 'path'
 
@@ -16,7 +16,7 @@ const listPath = join(dir, '..', 'list.json')
 
 const indentation = '  '
 
-suite('extensions', function (suite, test) {
+kava.suite('extensions', function (suite, test) {
 	test('data had no text extensions', function () {
 		const duplicates = list.filter((local) => aliens.includes(local))
 		deepEqual(
