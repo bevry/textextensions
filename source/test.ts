@@ -9,7 +9,11 @@ import { equal, deepEqual } from 'assert-helpers'
 import { suite } from 'kava'
 import { writeFile } from 'fs'
 import { join } from 'path'
-const listPath = join(__dirname, '..', 'list.json')
+
+import filedirname from 'filedirname'
+const [file, dir] = filedirname()
+const listPath = join(dir, '..', 'list.json')
+
 const indentation = '  '
 
 suite('extensions', function (suite, test) {
