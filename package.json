@@ -230,8 +230,7 @@
     "singleQuote": true
   },
   "boundation": {
-    "minimumSupportNodeVersion": "0.8",
-    "minimumTestNodeVersion": "10",
+    "nodeVersionsTestedRange": ">=10",
     "compiler": "typescript",
     "targets": [
       "ES5"
