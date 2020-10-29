@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "5.11.0",
+  "version": "5.12.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "MIT",
@@ -120,7 +120,7 @@
         "require"
       ],
       "engines": {
-        "node": "10 || 12 || 13 || 14",
+        "node": "10 || 12 || 14 || 15",
         "browsers": false
       }
     },
@@ -135,7 +135,7 @@
         "import"
       ],
       "engines": {
-        "node": "12 || 13 || 14",
+        "node": "12 || 14 || 15",
         "browsers": false
       }
     },
@@ -170,25 +170,25 @@
   "browser": "edition-browsers/index.js",
   "module": "edition-browsers/index.js",
   "devDependencies": {
-    "@bevry/update-contributors": "^1.16.0",
-    "@typescript-eslint/eslint-plugin": "^4.0.1",
-    "@typescript-eslint/parser": "^4.0.1",
-    "assert-helpers": "^7.2.0",
-    "binaryextensions": "^4.14.0",
-    "eslint": "^7.8.1",
-    "eslint-config-bevry": "^3.22.0",
-    "eslint-config-prettier": "^6.11.0",
+    "@bevry/update-contributors": "^1.17.0",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "assert-helpers": "^8.1.0",
+    "binaryextensions": "^4.15.0",
+    "eslint": "^7.12.1",
+    "eslint-config-bevry": "^3.23.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "filedirname": "^2.3.0",
-    "kava": "^5.12.0",
-    "make-deno-edition": "^1.1.1",
-    "prettier": "^2.1.1",
-    "projectz": "^2.16.0",
+    "filedirname": "^2.4.0",
+    "kava": "^5.13.0",
+    "make-deno-edition": "^1.2.0",
+    "prettier": "^2.1.2",
+    "projectz": "^2.17.0",
     "surge": "^0.21.6",
-    "typedoc": "^0.19.1",
-    "typescript": "^4.0.2",
-    "valid-directory": "^3.3.0",
-    "valid-module": "^1.13.0"
+    "typedoc": "^0.19.2",
+    "typescript": "^4.0.5",
+    "valid-directory": "^3.4.0",
+    "valid-module": "^1.14.0"
   },
   "scripts": {
     "our:clean": "rm -Rf ./docs ./edition* ./es2015 ./es5 ./out ./.next",
