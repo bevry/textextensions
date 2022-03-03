@@ -285,6 +285,7 @@ const list = [
 	'xsd',
 	'xsl',
 	'xslt',
+	'xaml',
 	'yaml',
 	'yml',
 	'zsh',
