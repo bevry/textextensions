@@ -37,10 +37,19 @@ kava.suite('extensions', function (suite, test) {
 
 	test('data was sorted', function () {
 		const expected = list.slice().sort()
-		equal(
-			JSON.stringify(list, null, indentation),
-			JSON.stringify(expected, null, indentation)
-		)
+		try {
+			equal(
+				JSON.stringify(list, null, indentation),
+				JSON.stringify(expected, null, indentation)
+			)
+		} catch (err) {
+			for (let i = 0; i < list.length; i++) {
+				if (list[i] !== expected[i]) {
+					console.log(`${i}: ${list[i]} !== ${expected[i]}`)
+				}
+			}
+			throw err
+		}
 	})
 
 	test('write the json file', function (next) {
