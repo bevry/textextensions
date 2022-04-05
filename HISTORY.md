@@ -1,5 +1,10 @@
 # History
 
+## v5.15.0 2022 April 5
+
+-   Add `xaml`
+    -   Thanks to [Kaan Barmore-Genç](https://github.com/SeriousBug) for [pull request #207](https://github.com/bevry/textextensions/pull/207)
+
 ## v5.14.0 2021 July 31
 
 -   Updated dependencies, [base files](https://github.com/bevry/base), and [editions](https://editions.bevry.me) using [boundation](https://github.com/bevry/boundation)
