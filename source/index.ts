@@ -2,6 +2,7 @@
 const list = [
 	'Makefile',
 	'Rakefile',
+	'Dockerfile',
 	'ada',
 	'adb',
 	'ads',
@@ -54,6 +55,7 @@ const list = [
 	'curlrc',
 	'cxx',
 	'dart',
+	'dockerignore',
 	'dfm',
 	'diff',
 	'dof',
@@ -256,6 +258,7 @@ const list = [
 	'tmLanguage',
 	'tmTheme',
 	'tmpl',
+	'toml',
 	'tpl',
 	'ts',
 	'tsv',
