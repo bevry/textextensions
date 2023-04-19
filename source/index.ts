@@ -1,8 +1,8 @@
 /** List of text file extensions */
 const list = [
+	'Dockerfile',
 	'Makefile',
 	'Rakefile',
-	'Dockerfile',
 	'ada',
 	'adb',
 	'ads',
@@ -55,9 +55,9 @@ const list = [
 	'curlrc',
 	'cxx',
 	'dart',
-	'dockerignore',
 	'dfm',
 	'diff',
+	'dockerignore',
 	'dof',
 	'dpk',
 	'dproj',
