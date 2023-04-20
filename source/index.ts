@@ -1,5 +1,6 @@
 /** List of text file extensions */
 const list = [
+	'Dockerfile',
 	'Makefile',
 	'Rakefile',
 	'ada',
@@ -56,6 +57,7 @@ const list = [
 	'dart',
 	'dfm',
 	'diff',
+	'dockerignore',
 	'dof',
 	'dpk',
 	'dproj',
@@ -256,6 +258,7 @@ const list = [
 	'tmLanguage',
 	'tmTheme',
 	'tmpl',
+	'toml',
 	'tpl',
 	'ts',
 	'tsv',
