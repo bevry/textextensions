@@ -1,5 +1,10 @@
 # History
 
+## v5.16.0 2023 April 29
+
+-   Add `Dockerfile`, `dockerignore`, and `toml`
+    -   Thanks to [Connor Chen](https://github.com/connorjchen) for [pull request #239](https://github.com/bevry/textextensions/pull/239)
+
 ## v5.15.0 2022 April 5
 
 -   Add `xaml`
