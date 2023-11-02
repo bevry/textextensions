@@ -10,10 +10,9 @@
 <span class="badge-githubworkflow"><a href="https://github.com/bevry/textextensions/actions?query=workflow%3Abevry" title="View the status of this project's GitHub Workflow: bevry"><img src="https://github.com/bevry/textextensions/workflows/bevry/badge.svg" alt="Status of the GitHub Workflow: bevry" /></a></span>
 <span class="badge-npmversion"><a href="https://npmjs.org/package/textextensions" title="View this project on NPM"><img src="https://img.shields.io/npm/v/textextensions.svg" alt="NPM version" /></a></span>
 <span class="badge-npmdownloads"><a href="https://npmjs.org/package/textextensions" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/textextensions.svg" alt="NPM downloads" /></a></span>
-<span class="badge-daviddm"><a href="https://david-dm.org/bevry/textextensions" title="View the status of this project's dependencies on DavidDM"><img src="https://img.shields.io/david/bevry/textextensions.svg" alt="Dependency Status" /></a></span>
-<span class="badge-daviddmdev"><a href="https://david-dm.org/bevry/textextensions#info=devDependencies" title="View the status of this project's development dependencies on DavidDM"><img src="https://img.shields.io/david/dev/bevry/textextensions.svg" alt="Dev Dependency Status" /></a></span>
 <br class="badge-separator" />
 <span class="badge-githubsponsors"><a href="https://github.com/sponsors/balupton" title="Donate to this project using GitHub Sponsors"><img src="https://img.shields.io/badge/github-donate-yellow.svg" alt="GitHub Sponsors donate button" /></a></span>
+<span class="badge-thanksdev"><a href="https://thanks.dev/u/gh/balupton" title="Donate to this project using ThanksDev"><img src="https://img.shields.io/badge/thanksdev-donate-yellow.svg" alt="ThanksDev donate button" /></a></span>
 <span class="badge-patreon"><a href="https://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 <span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
 <span class="badge-liberapay"><a href="https://liberapay.com/bevry" title="Donate to this project using Liberapay"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg" alt="Liberapay donate button" /></a></span>
@@ -71,14 +70,14 @@ Want to detect if a file is text or binary? Check out [bevry/istextorbinary](htt
 <a href="https://deno.land" title="Deno is a secure runtime for JavaScript and TypeScript, it is an alternative for Node.js"><h3>Deno</h3></a>
 
 ``` typescript
-import pkg from 'https://unpkg.com/textextensions@^5.16.0/edition-deno/index.ts'
+import pkg from 'https://unpkg.com/textextensions@^6.0.0/edition-deno/index.ts'
 ```
 
 <a href="https://www.skypack.dev" title="Skypack is a JavaScript Delivery Network for modern web apps"><h3>Skypack</h3></a>
 
 ``` html
 <script type="module">
-    import pkg from '//cdn.skypack.dev/textextensions@^5.16.0'
+    import pkg from '//cdn.skypack.dev/textextensions@^6.0.0'
 </script>
 ```
 
@@ -86,7 +85,7 @@ import pkg from 'https://unpkg.com/textextensions@^5.16.0/edition-deno/index.ts'
 
 ``` html
 <script type="module">
-    import pkg from '//unpkg.com/textextensions@^5.16.0'
+    import pkg from '//unpkg.com/textextensions@^6.0.0'
 </script>
 ```
 
@@ -94,7 +93,7 @@ import pkg from 'https://unpkg.com/textextensions@^5.16.0/edition-deno/index.ts'
 
 ``` html
 <script type="module">
-    import pkg from '//dev.jspm.io/textextensions@5.16.0'
+    import pkg from '//dev.jspm.io/textextensions@6.0.0'
 </script>
 ```
 
@@ -103,7 +102,7 @@ import pkg from 'https://unpkg.com/textextensions@^5.16.0/edition-deno/index.ts'
 <p>This package is published with the following editions:</p>
 
 <ul><li><code>textextensions/source/index.ts</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> source code with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
-<li><code>textextensions/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against <a href="https://en.wikipedia.org/wiki/ECMAScript#11th_Edition_–_ECMAScript_2020" title="ECMAScript ES2020">ES2020</a> for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
+<li><code>textextensions/edition-browsers/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against ES2022 for web browsers with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
 <li><code>textextensions</code> aliases <code>textextensions/edition-es5/index.js</code></li>
 <li><code>textextensions/edition-es5/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against ES5 for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://nodejs.org/dist/latest-v5.x/docs/api/modules.html" title="Node/CJS Modules">Require</a> for modules</li>
 <li><code>textextensions/edition-es5-esm/index.js</code> is <a href="https://www.typescriptlang.org/" title="TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. ">TypeScript</a> compiled against ES5 for <a href="https://nodejs.org" title="Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine">Node.js</a> with <a href="https://babeljs.io/docs/learn-es2015/#modules" title="ECMAScript Modules">Import</a> for modules</li>
@@ -136,6 +135,7 @@ These amazing people are maintaining this project:
 No sponsors yet! Will you be the first?
 
 <span class="badge-githubsponsors"><a href="https://github.com/sponsors/balupton" title="Donate to this project using GitHub Sponsors"><img src="https://img.shields.io/badge/github-donate-yellow.svg" alt="GitHub Sponsors donate button" /></a></span>
+<span class="badge-thanksdev"><a href="https://thanks.dev/u/gh/balupton" title="Donate to this project using ThanksDev"><img src="https://img.shields.io/badge/thanksdev-donate-yellow.svg" alt="ThanksDev donate button" /></a></span>
 <span class="badge-patreon"><a href="https://patreon.com/bevry" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 <span class="badge-flattr"><a href="https://flattr.com/profile/balupton" title="Donate to this project using Flattr"><img src="https://img.shields.io/badge/flattr-donate-yellow.svg" alt="Flattr donate button" /></a></span>
 <span class="badge-liberapay"><a href="https://liberapay.com/bevry" title="Donate to this project using Liberapay"><img src="https://img.shields.io/badge/liberapay-donate-yellow.svg" alt="Liberapay donate button" /></a></span>
@@ -151,10 +151,12 @@ These amazing people have contributed code to this project:
 
 <ul><li><a href="https://github.com/balupton">Benjamin Lupton</a> — <a href="https://github.com/bevry/textextensions/commits?author=balupton" title="View the GitHub contributions of Benjamin Lupton on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/brianlukoff">Brian Lukoff</a> — <a href="https://github.com/bevry/textextensions/commits?author=brianlukoff" title="View the GitHub contributions of Brian Lukoff on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/connorjchen">Connor Chen</a> — <a href="https://github.com/bevry/textextensions/commits?author=connorjchen" title="View the GitHub contributions of Connor Chen on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/fbeline">Felipe Beline</a> — <a href="https://github.com/bevry/textextensions/commits?author=fbeline" title="View the GitHub contributions of Felipe Beline on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/JamyDev">Jamy Timmermans</a> — <a href="https://github.com/bevry/textextensions/commits?author=JamyDev" title="View the GitHub contributions of Jamy Timmermans on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/jaswrks">Jason Caldwell</a> — <a href="https://github.com/bevry/textextensions/commits?author=jaswrks" title="View the GitHub contributions of Jason Caldwell on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/TheJoshuaEvans">Joshua Evans</a> — <a href="https://github.com/bevry/textextensions/commits?author=TheJoshuaEvans" title="View the GitHub contributions of Joshua Evans on repository bevry/textextensions">view contributions</a></li>
+<li><a href="https://github.com/SeriousBug">Kaan Barmore-Genç</a> — <a href="https://github.com/bevry/textextensions/commits?author=SeriousBug" title="View the GitHub contributions of Kaan Barmore-Genç on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/LvChengbin">LvChengbin</a> — <a href="https://github.com/bevry/textextensions/commits?author=LvChengbin" title="View the GitHub contributions of LvChengbin on repository bevry/textextensions">view contributions</a></li>
 <li><a href="https://github.com/monsterkodi">monsterkodi</a> — <a href="https://github.com/bevry/textextensions/commits?author=monsterkodi" title="View the GitHub contributions of monsterkodi on repository bevry/textextensions">view contributions</a></li></ul>
 
@@ -173,6 +175,6 @@ Unless stated otherwise all works are:
 
 and licensed under:
 
-<ul><li><a href="http://spdx.org/licenses/MIT.html">MIT License</a></li></ul>
+<ul><li><a href="http://spdx.org/licenses/Artistic-2.0.html">Artistic License 2.0</a></li></ul>
 
 <!-- /LICENSE -->
