@@ -177,7 +177,7 @@
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
     "assert-helpers": "^8.4.0",
-    "binaryextensions": "^4.19.0",
+    "binaryextensions": "^6.0.0",
     "eslint": "^8.52.0",
     "eslint-config-bevry": "^3.28.0",
     "eslint-config-prettier": "^9.0.0",
