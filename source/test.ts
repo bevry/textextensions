@@ -22,7 +22,7 @@ kava.suite('extensions', function (suite, test) {
 		deepEqual(
 			duplicates,
 			[],
-			'there should be no binary extensions that are present inside textextensions',
+			'there should be no binary extensions that are present inside textextensions'
 		)
 	})
 
@@ -31,7 +31,7 @@ kava.suite('extensions', function (suite, test) {
 		equal(
 			list.length,
 			set.size,
-			'length was the same as when duplicates were removed',
+			'length was the same as when duplicates were removed'
 		)
 	})
 
@@ -40,7 +40,7 @@ kava.suite('extensions', function (suite, test) {
 		try {
 			equal(
 				JSON.stringify(list, null, indentation),
-				JSON.stringify(expected, null, indentation),
+				JSON.stringify(expected, null, indentation)
 			)
 		} catch (err) {
 			for (let i = 0; i < list.length; i++) {
