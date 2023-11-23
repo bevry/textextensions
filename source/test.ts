@@ -7,13 +7,10 @@ import aliens from 'binaryextensions'
 
 import { equal, deepEqual } from 'assert-helpers'
 import kava from 'kava'
-import { writeFile } from 'fs'
-import { join } from 'path'
+import writeFile from '@bevry/fs-write'
+import promiseErrback from 'promise-errback'
 
-import filedirname from 'filedirname'
-const [file, dir] = filedirname()
-const listPath = join(dir, '..', 'list.json')
-
+const listPath = /* cwd */ 'list.json'
 const indentation = '  '
 
 kava.suite('extensions', function (suite, test) {
@@ -22,7 +19,7 @@ kava.suite('extensions', function (suite, test) {
 		deepEqual(
 			duplicates,
 			[],
-			'there should be no binary extensions that are present inside textextensions',
+			'there should be no binary extensions that are present inside textextensions'
 		)
 	})
 
@@ -31,7 +28,7 @@ kava.suite('extensions', function (suite, test) {
 		equal(
 			list.length,
 			set.size,
-			'length was the same as when duplicates were removed',
+			'length was the same as when duplicates were removed'
 		)
 	})
 
@@ -40,7 +37,7 @@ kava.suite('extensions', function (suite, test) {
 		try {
 			equal(
 				JSON.stringify(list, null, indentation),
-				JSON.stringify(expected, null, indentation),
+				JSON.stringify(expected, null, indentation)
 			)
 		} catch (err) {
 			for (let i = 0; i < list.length; i++) {
@@ -52,10 +49,7 @@ kava.suite('extensions', function (suite, test) {
 		}
 	})
 
-	test('write the json file', function (next) {
-		writeFile(listPath, JSON.stringify(list), function (error) {
-			if (error) return next(error)
-			next()
-		})
+	test('write the json file', function (done) {
+		promiseErrback(writeFile(listPath, JSON.stringify(list)), done)
 	})
 })
