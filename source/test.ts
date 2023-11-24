@@ -2,15 +2,23 @@
 // https://github.com/bevry/textextensions/blob/master/test.ts
 // https://github.com/bevry/binaryextensions/blob/master/test.ts
 
+// us
 import list from './index.js'
 import aliens from 'binaryextensions'
 
+// external
 import { equal, deepEqual } from 'assert-helpers'
 import kava from 'kava'
 import writeFile from '@bevry/fs-write'
 import promiseErrback from 'promise-errback'
 
-const listPath = /* cwd */ 'list.json'
+// paths
+import { join } from 'path'
+import filedirname from 'filedirname'
+const [file, dir] = filedirname()
+const listPath = join(dir, '..', 'list.json')
+
+// vars
 const indentation = '  '
 
 kava.suite('extensions', function (suite, test) {
