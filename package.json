@@ -1,7 +1,7 @@
 {
   "title": "The Definitive List of Text Extensions",
   "name": "textextensions",
-  "version": "6.5.0",
+  "version": "6.6.0",
   "description": "A package that contains an array of every single file extension there is for text files",
   "homepage": "https://github.com/bevry/textextensions",
   "license": "Artistic-2.0",
@@ -191,11 +191,11 @@
   "devDependencies": {
     "@bevry/fs-write": "^1.2.0",
     "@bevry/update-contributors": "^1.23.0",
-    "@types/node": "^20.9.5",
+    "@types/node": "^20.10.0",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "@typescript-eslint/parser": "^6.12.0",
     "assert-helpers": "^11.5.0",
-    "binaryextensions": "^6.5.0",
+    "binaryextensions": "^6.6.0",
     "eslint": "^8.54.0",
     "eslint-config-bevry": "^5.1.0",
     "eslint-config-prettier": "^9.0.0",
