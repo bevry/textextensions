@@ -31,6 +31,7 @@ const list = [
 	'cfm',
 	'cfml',
 	'cgi',
+	'cjs',
 	'clj',
 	'cls',
 	'cmake',

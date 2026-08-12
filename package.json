@@ -233,8 +233,8 @@
     "node": {
       "types": "./edition-types/index.d.ts",
       "import": "./edition-es2022-esm/index.js",
-      "default": "./index.cjs",
-      "require": "./edition-es2022/index.js"
+      "require": "./edition-es2022/index.js",
+      "default": "./index.cjs"
     },
     "browser": {
       "types": "./edition-types/index.d.ts",
